@@ -1,4 +1,6 @@
+import { useTrans } from "@/locales/Helper";
 import FeatureItem from "./FeatureItem";
+
 
 const featuresData = [
   {
@@ -22,9 +24,11 @@ const featuresData = [
 ];
 
 const FeaturesSection = () => {
+  const t= useTrans()
+
   return (
     <section id="features" className="features">
-      <h3 className="text-center fw-bold">مميزات تطبيق آي نيوز</h3>
+      <h3 className="text-center fw-bold">{t["Features of the iNews application"]}</h3>
       <div className="container mt-5">
         <div className="row">
           {featuresData.map((feature) => (

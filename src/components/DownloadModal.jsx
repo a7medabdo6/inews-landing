@@ -2,13 +2,16 @@ import Image from "next/image";
 // Import images
 import googlePlay from "#/images/google-play.png";
 import appStore from "#/images/app-store.png";
+import { useTrans } from "@/locales/Helper";
 
 const DownloadModal = ({ setShow }) => {
+  const t= useTrans()
+
   return (
     <div className="modal position-fixed top-0 start-0 z-3 w-100 h-100 bg-black d-flex justify-content-center align-items-center">
       <div className="bg-white">
         <div className="head d-flex justify-content-center align-items-center gap-4 px-2 text-white">
-          <h4>تابعنا عبر المنصات الخاصة بنا</h4>
+          <h4>    {t["Follow us"]}</h4>
           <button
             className="btn mb-5"
             onClick={() => {

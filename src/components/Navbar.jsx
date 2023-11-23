@@ -2,9 +2,11 @@ import Image from "next/image";
 // Import images
 import logo from "#/images/logo.png";
 import { useEffect, useState } from "react";
+import { useTrans } from "@/locales/Helper";
 
 const Navbar = () => {
   const [hash, setHash] = useState("#home");
+  const [Lang, setLang] = useState("EN");
 
   useEffect(() => {
     if (location.hash) {
@@ -14,6 +16,20 @@ const Navbar = () => {
 
   const handleClick = (hash) => {
     setHash(hash);
+  };  
+   const t= useTrans()
+
+console.log(t,"ttttt");
+  const [isArabic, setIsArabic] = useState(() =>  false);
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("preferredLanguage");
+    setIsArabic(storedLanguage=="en" ? false : true);
+  }, []);
+
+
+  const toggleLanguage = () => {
+    localStorage.setItem("preferredLanguage", isArabic ?"en":"ar");
+
   };
 
   return (
@@ -42,7 +58,7 @@ const Navbar = () => {
                 href="#home"
                 onClick={() => handleClick("#home")}
               >
-                الرئيسية
+            {t["Home"]}
               </a>
             </li>
             <li className="nav-item">
@@ -51,7 +67,7 @@ const Navbar = () => {
                 href="#features"
                 onClick={() => handleClick("#features")}
               >
-                مميزات التطبيق
+            {t["Application Features"]}
               </a>
             </li>
             <li className="nav-item">
@@ -63,7 +79,7 @@ const Navbar = () => {
                 href="#vision-message"
                 onClick={() => handleClick("#vision-message")}
               >
-                الرؤية و الرسالة
+            {t["Vision and Goals"]}
               </a>
             </li>
             <li className="nav-item">
@@ -75,13 +91,20 @@ const Navbar = () => {
                 href="#download-app"
                 onClick={() => handleClick("#download-app")}
               >
-                تحميل التطبيق
+            {t["Download Application"]}
               </a>
             </li>
           </ul>
           <form className="d-flex" role="search">
             <button className="btn text-white rounded-0 px-4" type="submit">
-              حمل التطبيق
+            {t["Download Application"]}
+                        </button>
+            <button
+              onClick={toggleLanguage}
+              className="btn text-white rounded-0 px-4 me-2"
+              type="submit"
+            >
+              {isArabic ? "En" : "Ar"}{" "}
             </button>
           </form>
         </div>

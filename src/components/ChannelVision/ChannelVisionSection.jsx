@@ -2,8 +2,11 @@ import Image from "next/image";
 // Import images
 import vision from "#/icons/vision.svg";
 import message from "#/icons/message.svg";
+import { useTrans } from "@/locales/Helper";
 
 const ChannelVisionSection = () => {
+  const t= useTrans()
+
   return (
     <section id="vision-message" className="vision-message">
       <div className="container">
@@ -32,7 +35,7 @@ const ChannelVisionSection = () => {
                 priority
                 className="ms-2"
               />
-              رؤية قناة آي نيوز
+              {t["Inews TV visions"]}
             </div>
             <div
               className="nav-link bg-transparent pe-0 text-white position-relative"
@@ -52,7 +55,7 @@ const ChannelVisionSection = () => {
                 priority
                 className="ms-2 text-white"
               />
-              رسالة قناة آي نيوز
+              {t["Inews TV goals"]}
             </div>
           </div>
           <div

@@ -4,8 +4,11 @@ import googlePlay from "#/images/google-play.png";
 import appStore from "#/images/app-store.png";
 import phoneSm from "#/images/phone_download_sm.png";
 import phoneLg from "#/images/phone_download_lg.png";
+import { useTrans } from "@/locales/Helper";
 
 const DownloadAppSection = () => {
+  const t= useTrans()
+
   return (
     <section id="download-app" className="download-app">
       <div className="container">
@@ -13,8 +16,7 @@ const DownloadAppSection = () => {
           <div className="col-lg-6">
             <div className="d-flex flex-column justify-content-center align-content-center gap-4">
               <h2 className="fw-bold">
-                حمل تطبيق آي نيوز الآن و استمتع بكافة المزايا و تابع آخر الأخبار
-                .
+              {t["Download the iNews application now and enjoy all latest news"]}
               </h2>
               <p className="fs-5">
                 لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل

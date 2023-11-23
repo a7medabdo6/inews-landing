@@ -3,8 +3,11 @@ import Image from "next/image";
 import logo from "#/images/logo.png";
 import googlePlay from "#/images/footer_google-play.png";
 import appStore from "#/images/footer_app-store.png";
+import { useTrans } from "@/locales/Helper";
 
 const Footer = () => {
+  const t= useTrans()
+
   return (
     <footer className="footer pt-5 pb-4 mb-lg-0">
       <div className="container position-relative">
@@ -17,8 +20,8 @@ const Footer = () => {
                 lineHeight: "30px",
               }}
             >
-              إخبارية عامة تعنى بالشأن العراقي والإقليمي والدولي بتفصيلاته كافة
-              تبث من جمهورية العراق. على التردد 11258 H
+                           {t[ "General news covering Iraqi, regional and international , broadcast from the Republic of Iraq. On frequency H 11258."]}
+
             </p>
 
             <div className="d-flex justify-content-center align-items-center gap-3">
@@ -146,25 +149,27 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-lg-3 d-flex flex-column justify-content-start align-items-start gap-3 pe-5 my-5 my-lg-0">
-            <h5 className="fw-bold mb-3 d-flex">حمل التطبيق</h5>
+            <h5 className="fw-bold mb-3 d-flex"> {t["Download the application"]}</h5>
             <div className="d-flex flex-column justify-content-start align-items-center gap-3">
               <Image src={googlePlay} alt="download app for android" priority />
               <Image src={appStore} alt="download app for ios" priority />
             </div>
           </div>
           <div className="col-lg-3 d-flex flex-column justify-content-start align-items-start gap-3 pe-5 pe-lg-0">
-            <h5 className="fw-bold mb-3">خريطة الموقع</h5>
+            <h5 className="fw-bold mb-3"> {t["Website Map"]}</h5>
             <div className="d-flex justify-content-start align-items-center gap-4">
               <div className="d-flex flex-column justify-content-center align-items-start gap-3">
-                <a href="#home">الرئيسية</a>
-                <a href="#features">مميزات التطبيق</a>
-                <a href="#vision-message">الرؤية و الرسالة</a>
-                <a href="#download-app">حمل تطبيق آي نيوز</a>
+                <a href="#home">  {t["Home"]}
+</a>
+                <a href="#features">  {t["Application Features"]}
+</a>
+                <a href="#vision-message"> {t["Vision and Goals"]}</a>
+                <a href="#download-app"> {t["Features of the iNews application"]}  </a>
               </div>
             </div>
           </div>
           <div className="col-lg-3 d-flex flex-column justify-content-start align-items-start gap-4 my-5 my-lg-0 px-5 px-lg-0">
-            <h5 className="fw-bold mb-3">تواصل معنا</h5>
+            <h5 className="fw-bold mb-3"> {t["Contact with us"]}</h5>
             <a
               href="http://"
               className="d-flex justify-content-center align-items-center gap-2"
@@ -181,7 +186,7 @@ const Footer = () => {
                   fill="#292929"
                 />
               </svg>
-              بغداد, Karrada, Iraq, 10069
+              {t["Baghdad, Karrada, Iraq, 10069"]}
             </a>
             <a
               href="mailto:info@i-news.tv"
@@ -228,7 +233,7 @@ const Footer = () => {
           borderTop: "1px solid #D2D2D2",
         }}
       >
-        <p>جميع الحقوق محفوظة © 2023 شبكة آي نيوز الفضائية</p>
+        <p>{t["All rights reserved © 2023 iNews Satellite Network"]}</p>
       </div>
     </footer>
   );
