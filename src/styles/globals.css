@@ -305,3 +305,27 @@ img {
   background-color: var(--main-color);
 }
 /* End Download App Modal */
+.custom-pos
+  {
+    top: -175px;
+    left: 185px
+  }
+  .custom-pos-two
+  {
+    top: -215px;
+    left: -30px
+  }
+  .ltr .custom-pos
+  {
+    top: -175px;
+    right: 185px;
+    left: unset
+
+  }
+  .ltr .custom-pos-two
+  {
+    top: -215px;
+    right: -30px;
+    left: unset
+
+  }

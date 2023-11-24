@@ -35,7 +35,7 @@ console.log(t,"ttttt");
   return (
     <nav className="navbar navbar-expand-lg bg-white position-fixed top-0 start-0 w-100 z-3">
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand" >
           <Image src={logo} alt="logo-img" priority />
         </a>
         <button

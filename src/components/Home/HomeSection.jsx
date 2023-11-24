@@ -26,20 +26,13 @@ const HomeSection = () => {
         </button>
 
         <div
-          className="position-absolute d-none d-lg-block"
-          style={{
-            top: "-175px",
-            left: "185px",
-          }}
+          className="position-absolute d-none d-lg-block custom-pos"
         >
           <Image src={phoneSm} alt="phone-app-img" priority />
         </div>
         <div
-          className="position-absolute d-none d-lg-block"
-          style={{
-            top: "-215px",
-            left: "-30px",
-          }}
+          className="position-absolute d-none d-lg-block custom-pos-two"
+         
         >
           <Image src={phoneLg} alt="phone-app-img" priority />
         </div>
