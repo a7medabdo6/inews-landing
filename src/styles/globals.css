@@ -260,3 +260,72 @@ img {
   transform: scale(1.3);
 }
 /* End Social Media Icons */
+
+/* Start Follow Us Modal */
+.modal > div {
+  width: 400px;
+}
+
+.modal > div .head {
+  background-color: var(--main-color);
+}
+
+.modal a {
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .follow-us-modal > div {
+    width: 100% !important;
+  }
+}
+/* End Follow Us Modal */
+
+/* Start Download App Modal */
+.modal .or::before,
+.modal .or::after {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 1px;
+  background-color: #C7C7C7;;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal .or::before {
+  left: 25px;
+}
+
+.modal .or::after {
+  right: 25px;
+}
+
+.modal .btn {
+  background-color: var(--main-color);
+}
+/* End Download App Modal */
+.custom-pos
+  {
+    top: -175px;
+    left: 185px
+  }
+  .custom-pos-two
+  {
+    top: -215px;
+    left: -30px
+  }
+  .ltr .custom-pos
+  {
+    top: -175px;
+    right: 185px;
+    left: unset
+
+  }
+  .ltr .custom-pos-two
+  {
+    top: -215px;
+    right: -30px;
+    left: unset
+
+  }
