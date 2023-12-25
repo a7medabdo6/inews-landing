@@ -36,25 +36,33 @@ const Footer = () => {
                 className="d-flex justify-content-center align-items-center rounded-circle border border-2 border-dark"
                 style={{ width: "35px", height: "35px" }}
               >
-                <Image src={facebook} alt="facebook" priority />
+                <a href="https://www.facebook.com/inewschannel1">
+                  <Image src={facebook} alt="facebook" priority />
+                </a>
               </div>
               <div
                 className="d-flex justify-content-center align-items-center rounded-circle border border-2 border-dark"
                 style={{ width: "35px", height: "35px" }}
               >
-                <Image src={twitter} alt="twitter" priority />
+                <a href="https://twitter.com/inewschanneltv">
+                  <Image src={twitter} alt="twitter" priority />
+                </a>
               </div>
               <div
                 className="d-flex justify-content-center align-items-center rounded-circle border border-2 border-dark"
                 style={{ width: "35px", height: "35px" }}
               >
-                <Image src={youtube} alt="youtube" priority />
+                <a href="https://www.youtube.com/c/inewschannel1">
+                  <Image src={youtube} alt="youtube" priority />
+                </a>
               </div>
               <div
                 className="d-flex justify-content-center align-items-center rounded-circle border border-2 border-dark"
                 style={{ width: "35px", height: "35px" }}
               >
-                <Image src={telegram} alt="telegram" priority />
+                <a href="https://t.me/inewschannel_tv">
+                  <Image src={telegram} alt="telegram" priority />
+                </a>
               </div>
               <div
                 className="d-flex justify-content-center align-items-center rounded-circle border border-2 border-dark"
@@ -66,15 +74,25 @@ const Footer = () => {
                 className="d-flex justify-content-center align-items-center rounded-circle border border-2 border-dark"
                 style={{ width: "35px", height: "35px" }}
               >
-                <Image src={instagram} alt="instagram" priority />
+                <a href="https://www.instagram.com/inewschanneltv/">
+                  <Image src={instagram} alt="instagram" priority />
+                </a>
               </div>
             </div>
           </div>
           <div className="col-lg-3 d-flex flex-column justify-content-start align-items-start gap-3 pe-5 my-5 my-lg-0">
             <h5 className="fw-bold mb-3 d-flex">حمل التطبيق</h5>
             <div className="d-flex flex-column justify-content-start align-items-center gap-3">
-              <Image src={googlePlay} alt="download app for android" priority />
-              <Image src={appStore} alt="download app for ios" priority />
+              <a href="https://play.google.com/store/apps/details?id=com.abualgaitinews.app">
+                <Image
+                  src={googlePlay}
+                  alt="download app for android"
+                  priority
+                />
+              </a>
+              <a href="https://apps.apple.com/us/app/%D9%82%D9%86%D8%A7%D8%A9-%D8%A7%D9%8A-%D9%86%D9%8A%D9%88%D8%B2-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9/id1532198502">
+                <Image src={appStore} alt="download app for ios" priority />
+              </a>
             </div>
           </div>
           <div className="col-lg-3 d-flex flex-column justify-content-start align-items-start gap-3 pe-5 pe-lg-0">

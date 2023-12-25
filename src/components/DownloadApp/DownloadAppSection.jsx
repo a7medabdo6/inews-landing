@@ -24,22 +24,26 @@ const DownloadAppSection = () => {
               </p>
 
               <div className="download-app-links d-flex justify-content-start align-items-center gap-3">
-                <Image
-                  className="android"
-                  src={googlePlay}
-                  width={220}
-                  height={65}
-                  alt="download app for android"
-                  priority
-                />
-                <Image
-                  className="ios"
-                  src={appStore}
-                  width={220}
-                  height={80}
-                  alt="download app for ios"
-                  priority
-                />
+                <a href="https://play.google.com/store/apps/details?id=com.abualgaitinews.app">
+                  <Image
+                    className="android"
+                    src={googlePlay}
+                    width={220}
+                    height={65}
+                    alt="download app for android"
+                    priority
+                  />
+                </a>
+                <a href="https://apps.apple.com/us/app/%D9%82%D9%86%D8%A7%D8%A9-%D8%A7%D9%8A-%D9%86%D9%8A%D9%88%D8%B2-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9/id1532198502">
+                  <Image
+                    className="ios"
+                    src={appStore}
+                    width={220}
+                    height={80}
+                    alt="download app for ios"
+                    priority
+                  />
+                </a>
               </div>
             </div>
           </div>

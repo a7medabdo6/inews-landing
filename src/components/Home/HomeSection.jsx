@@ -17,9 +17,11 @@ const HomeSection = () => {
           والدولي بتفصيلاته كافة تبث من جمهورية العراق.
         </p>
 
-        <button className="btn rounded-0 text-white border py-2 my-4">
-          حمل التطبيق الآن
-        </button>
+        <a href="#download-app">
+          <button className="btn rounded-0 text-white border py-2 my-4">
+            حمل التطبيق الآن
+          </button>
+        </a>
 
         <div
           className="position-absolute d-none d-lg-block"

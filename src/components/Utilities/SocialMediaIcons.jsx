@@ -17,7 +17,7 @@ const SocialMediaIcons = () => {
       }}
     >
       <div className="d-flex flex-column justify-content-center align-items-center gap-3">
-        <a href="#">
+        <a href="https://www.facebook.com/inewschannel1">
           <Image
             className="animate-scale"
             src={facebook}
@@ -26,7 +26,7 @@ const SocialMediaIcons = () => {
             alt="facebook"
           />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/inewschanneltv">
           <Image
             className="animate-scale"
             src={twitter}
@@ -35,7 +35,7 @@ const SocialMediaIcons = () => {
             alt="twitter"
           />
         </a>
-        <a href="#">
+        <a href="https://www.youtube.com/c/inewschannel1">
           <Image
             className="animate-scale"
             src={youtube}
@@ -44,7 +44,7 @@ const SocialMediaIcons = () => {
             alt="youtube"
           />
         </a>
-        <a href="#">
+        <a href="https://t.me/inewschannel_tv">
           <Image
             className="animate-scale"
             src={telegram}
@@ -62,7 +62,7 @@ const SocialMediaIcons = () => {
             alt="linkedin"
           />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/inewschanneltv/">
           <Image
             className="animate-scale"
             src={instagram}
