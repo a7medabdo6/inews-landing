@@ -12,18 +12,16 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
   const [show, setShow] = useState(true);
-  ;
-  const [language, setLanguage] = useState('en'); // Default language is English
-  const direction = language === 'ar' ? 'rtl' : 'ltr';
+  const [language, setLanguage] = useState("ar"); // Default language is English
+  const direction = language === "ar" ? "rtl" : "ltr";
 
   useEffect(() => {
     // Fetch language from localStorage on initial load
-    const storedLanguage = localStorage.getItem('preferredLanguage');
+    const storedLanguage = localStorage.getItem("preferredLanguage");
     if (storedLanguage) {
       setLanguage(storedLanguage);
     }
   }, []); // Run only once on component mount
-
 
   return (
     <div dir={direction} className={direction}>
