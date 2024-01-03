@@ -7,37 +7,37 @@ const FollowUs = ({ setShow }) => {
     {
       id: 1,
       img: "/icons/google_play.svg",
-      txt: "حمل التطبيق من جوجل بلاي",
+      txt: "  حمِّل تطبيق قناة آي نيوز من جوجل بلي      ",
       link: "https://play.google.com/store/apps/details?id=com.abualgaitinews.app",
     },
     {
       id: 2,
       img: "/icons/app_store.svg",
-      txt: "حمل التطبيق من آبل ستـور",
+      txt: "   حمِّل تطبيق قناة آي نيوز من تطبيق آبل ستور      ",
       link: "https://apps.apple.com/us/app/%D9%82%D9%86%D8%A7%D8%A9-%D8%A7%D9%8A-%D9%86%D9%8A%D9%88%D8%B2-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9/id1532198502",
     },
     {
       id: 3,
       img: "/icons/earth.svg",
-      txt: "زور موقعنا الرئيسي من هنا",
+      txt: "تصفَّح الموقع الرسمي للقناة من هنا ",
       link: "",
     },
     {
       id: 4,
       img: "/icons/facebook.png",
-      txt: "زور صفحتنا على فيـسبوك",
+      txt: "تابعنا عبر الفيسبوك       ",
       link: "https://www.facebook.com/inewschannel1",
     },
     {
       id: 5,
       img: "/icons/instagram.png",
-      txt: "زور صفحتنا على إنستجرام",
+      txt: "  تابعنا عبر الإنستغرام      ",
       link: "https://www.instagram.com/inewschanneltv/",
     },
     {
       id: 6,
       img: "/icons/telegram.png",
-      txt: "زور صفحتنا على تيليجرام",
+      txt: "  تابعنا عبر التلجرام ",
       link: "https://t.me/inewschannel_tv",
     },
   ];

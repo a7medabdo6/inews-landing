@@ -16,26 +16,24 @@ const Navbar = () => {
 
   const handleClick = (hash) => {
     setHash(hash);
-  };  
-   const t= useTrans()
+  };
+  const t = useTrans();
 
-console.log(t,"ttttt");
-  const [isArabic, setIsArabic] = useState(() =>  false);
+  console.log(t, "ttttt");
+  const [isArabic, setIsArabic] = useState(() => false);
   useEffect(() => {
     const storedLanguage = localStorage.getItem("preferredLanguage");
-    setIsArabic(storedLanguage=="en" ? false : true);
+    setIsArabic(storedLanguage == "ar" ? false : true);
   }, []);
 
-
   const toggleLanguage = () => {
-    localStorage.setItem("preferredLanguage", isArabic ?"en":"ar");
-
+    localStorage.setItem("preferredLanguage", isArabic ? "ar" : "ar");
   };
 
   return (
     <nav className="navbar navbar-expand-lg bg-white position-fixed top-0 start-0 w-100 z-3">
       <div className="container">
-        <a className="navbar-brand" >
+        <a className="navbar-brand">
           <Image src={logo} alt="logo-img" priority />
         </a>
         <button
@@ -58,7 +56,7 @@ console.log(t,"ttttt");
                 href="#home"
                 onClick={() => handleClick("#home")}
               >
-            {t["Home"]}
+                {t["Home"]}
               </a>
             </li>
             <li className="nav-item">
@@ -67,7 +65,7 @@ console.log(t,"ttttt");
                 href="#features"
                 onClick={() => handleClick("#features")}
               >
-            {t["Application Features"]}
+                {t["Application Features"]}
               </a>
             </li>
             <li className="nav-item">
@@ -79,7 +77,7 @@ console.log(t,"ttttt");
                 href="#vision-message"
                 onClick={() => handleClick("#vision-message")}
               >
-            {t["Vision and Goals"]}
+                {t["Vision and Goals"]}
               </a>
             </li>
             <li className="nav-item">
@@ -91,14 +89,14 @@ console.log(t,"ttttt");
                 href="#download-app"
                 onClick={() => handleClick("#download-app")}
               >
-            {t["Download Application"]}
+                {t["Download Application"]}
               </a>
             </li>
           </ul>
-          <form className="d-flex" role="search">
+          {/* <form className="d-flex" role="search">
             <button className="btn text-white rounded-0 px-4" type="submit">
-            {t["Download Application"]}
-                        </button>
+              {t["Download Application"]}
+            </button>
             <button
               onClick={toggleLanguage}
               className="btn text-white rounded-0 px-4 me-2"
@@ -106,7 +104,7 @@ console.log(t,"ttttt");
             >
               {isArabic ? "En" : "Ar"}{" "}
             </button>
-          </form>
+          </form> */}
         </div>
       </div>
     </nav>

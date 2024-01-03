@@ -13,9 +13,11 @@ export const useTrans = () => {
       return;
     }
     const lang = localStorage.getItem("preferredLanguage");
-    console.log(lang,"lang");
-    setFile(lang == "en" || !lang ? EnTrans : ArTrans);
-    return lang == "en" || !lang ? EnTrans : ArTrans;
+    console.log(lang, "lang");
+    // setFile(lang == "ar" || !lang ? EnTrans : ArTrans);
+    // return lang == "ar" || !lang ? EnTrans : ArTrans;
+    setFile(ArTrans);
+    return ArTrans;
   };
 
   useEffect(() => {
